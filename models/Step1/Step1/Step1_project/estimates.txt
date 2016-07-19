@@ -1,0 +1,11 @@
+          ; parameter;  s.e._lin;r.s.e._lin;pvalues_lin
+     V_pop;   8.15908;   0.37901;      4.65;        NaN
+    KA_pop;   0.62771;   0.06294;     10.03;        NaN
+    CL_pop;   0.13288;   0.00633;      4.77;        NaN
+  TLAG_pop;   0.00000;   0.00000;      0.00;        NaN
+   omega_V;   0.20315;   0.04013;     19.76;        NaN
+  omega_KA;   0.00000;   0.00000;      0.00;        NaN
+  omega_CL;   0.25374;   0.03585;     14.13;        NaN
+omega_TLAG;   0.00000;   0.00000;      0.00;        NaN
+corr(V,CL);   0.53117;   0.17947;     33.79;        NaN
+         b;   0.23310;   0.01201;      5.15;        NaN

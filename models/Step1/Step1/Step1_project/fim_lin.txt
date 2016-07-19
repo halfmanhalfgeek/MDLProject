@@ -1,0 +1,10 @@
+     V_pop;   1.00000;   0.19341;   0.45871;       NaN;   0.00000;       NaN;   0.00000;       NaN;   0.00000;   0.00000
+    KA_pop;   0.19341;   1.00000;  -0.00042;       NaN;   0.00000;       NaN;   0.00000;       NaN;   0.00000;   0.00000
+    CL_pop;   0.45871;  -0.00042;   1.00000;       NaN;   0.00000;       NaN;   0.00000;       NaN;   0.00000;   0.00000
+  TLAG_pop;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN
+   omega_V;   0.00000;   0.00000;   0.00000;       NaN;   1.00000;       NaN;   0.22575;       NaN;   0.20444;  -0.13339
+  omega_KA;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN
+  omega_CL;   0.00000;   0.00000;   0.00000;       NaN;   0.22575;       NaN;   1.00000;       NaN;   0.32936;  -0.04557
+omega_TLAG;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN;       NaN
+corr(V,CL);   0.00000;   0.00000;   0.00000;       NaN;   0.20444;       NaN;   0.32936;       NaN;   1.00000;   0.04671
+         b;   0.00000;   0.00000;   0.00000;       NaN;  -0.13339;       NaN;  -0.04557;       NaN;   0.04671;   1.00000

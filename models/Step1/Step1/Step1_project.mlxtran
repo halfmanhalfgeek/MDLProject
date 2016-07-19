@@ -1,0 +1,44 @@
+DATA:
+path = "%MLXPROJECT%/",
+file  ="warfarin_conc.csv",
+headers = {ID,TIME,IGNORE,DOSE,YTYPE,Y,MDV,IGNORE}
+columnDelimiter = ","
+
+
+INDIVIDUAL:
+CL = { distribution=lognormal, iiv=yes },
+V = { distribution=lognormal, iiv=yes },
+KA = { distribution=normal, iiv=no },
+TLAG = { distribution=normal, iiv=no },
+
+CORRELATION:
+correlationIIV={{CL,V}}
+
+OBSERVATION:
+Y = { type=continuous, prediction=CC, error=proportional},
+
+STRUCTURAL_MODEL:
+	file="mlxt:Step1_model,
+	path="%MLXPROJECT%",
+	output={CC}
+
+TASKS:
+globalSettings={
+	withVariance=no,
+	settingsGraphics="%MLXPROJECT%/tables.xmlx",
+},
+; workflow
+	estimatePopulationParameters(
+		initialValues={
+			omega_{CL} = 0.01,
+			omega_{V} = 0.01,
+			pop_{CL} = 0.1,
+			pop_{KA} = 0.362,
+			pop_{TLAG} = 0 [medthod=FIXED],
+			pop_{V} = 8,
+			b_{Y} = 0.1,
+	                            })
+estimateFisherInformationMatrix( method={linearization} ),
+estimateIndividualParameters( method={conditionalDistribution} ),
+estimateLogLikelihood(method={linearization}),
+displayGraphics(),

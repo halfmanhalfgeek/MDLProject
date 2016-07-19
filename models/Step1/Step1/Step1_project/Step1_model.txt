@@ -1,0 +1,21 @@
+INPUT:
+	parameter={V, KA, CL, TLAG}
+
+PK:
+
+EQUATION:
+D = amtDose
+k = (CL)/(V)
+if (t)<(TLAG)
+
+CC=0
+
+else
+
+CC=((((D)/(V))*(KA))/((KA)-(k)))*((exp((-(k))*((t)-(TLAG))))-(exp((-(KA))*((t)-(TLAG)))))
+
+end
+
+
+OUTPUT:
+	output={CC}

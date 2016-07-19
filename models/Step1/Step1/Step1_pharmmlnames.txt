@@ -1,0 +1,7 @@
+CL:eta=ETA_CL
+CL:omega=PPV_CL
+CL:pop=POP_CL
+V:eta=ETA_V
+V:omega=PPV_V
+V:pop=POP_V
+Y:errorParameter:a=RUV_PROP
