@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Assumption>
+	<Type>Pharmacological</Type>
+	<AssumptionBody>Emax model fixed to 100&#37; is a more physiological description of the data compared to a linear model.</AssumptionBody>
+	<Justification>Emax model is not better than linear model; however, for this drug class, Emax of 100%&#37; is more realistic.</Justification>
+	<Established>New</Established>
+	<Testable>Testable with a wider range of concentrations (external/future study).</Testable>
+	<TestApproach>
+Comparison of simulated metrics of interest between the two competing models.
+ 	</TestApproach>
+	<TestOutcome>To achieve a 90&#37; response (assumed to be clinically meaningful) requires a twofold higher dose using the Emax model compared to the linear model.</TestOutcome>
+</Assumption>
